@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The World | Explore Your World</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body {
+  background: #fffaf2;
+  color: #292544;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: bold;
+  color: #f15b78;
+}
+
+nav a {
+  text-decoration: none;
+  color: #292544;
+  margin-left: 22px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f15b78;
+}
+
+.hero {
+  padding: 85px 8%;
+  background: linear-gradient(120deg, #ffe0e8, #fff0ce, #dff5f1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 550px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 6vw, 65px);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #f15b78;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.btn {
+  display: inline-block;
+  background: #f15b78;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #d94364;
+}
+
+.art {
+  font-size: 125px;
+  background: white;
+  border-radius: 40% 60% 55% 45%;
+  padding: 35px;
+  box-shadow: 10px 15px 0 #f8c5d0;
+}
+
+section {
+  padding: 65px 8%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  padding: 28px;
+  border-radius: 22px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  margin: 14px 0;
+  font-size: 22px;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+.pink { background: #ffe0e8; }
+.yellow { background: #fff0c9; }
+.blue { background: #dceeff; }
+.green { background: #dff5e9; }
+
+.emoji {
+  font-size: 45px;
+}
+
+.about {
+  background: #f0eaff;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.contact {
+  background: #fff0ce;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.contact p {
+  margin: 15px 0 25px;
+}
+
+footer {
+  background: #292544;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 55px;
+}
+
+@media(max-width: 600px) {
+  header {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 14px;
+  }
+
+  .hero {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .art {
+    font-size: 85px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🌍 the-world</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div class="hero-text">
+    <h1>Explore the <span>World</span> with Us!</h1>
+    <p>
+      Welcome to The World! A place full of ideas,
+      creativity and inspiration. Discover something
+      new and make every day exciting.
+    </p>
+    <a href="#services" class="btn">Explore More →</a>
+  </div>
+  <div class="art">🌎✨</div>
+</div>
+
+<section id="about">
+  <div class="about" style="padding: 45px;">
+    <h2 class="section-title">About Us 💖</h2>
+    <p>
+      The World is a creative business website project
+      designed to bring ideas and people together.
+      Our goal is to share inspiration, discover new
+      opportunities and make the digital world more exciting.
+    </p>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">What We Offer</h2>
+  <p class="subtitle">A little creativity can make a big difference!</p>
+
+  <div class="cards">
+    <div class="card pink">
+      <div class="emoji">💡</div>
+      <h3>Creative Ideas</h3>
+      <p>Fresh ideas and inspiration to help you think differently.</p>
+    </div>
+
+    <div class="card yellow">
+      <div class="emoji">🌈</div>
+      <h3>Explore More</h3>
+      <p>Discover interesting things and explore new possibilities.</p>
+    </div>
+
+    <div class="card blue">
+      <div class="emoji">🤝</div>
+      <h3>Community</h3>
+      <p>Connect, share thoughts and grow together.</p>
+    </div>
+
+    <div class="card green">
+      <div class="emoji">🚀</div>
+      <h3>Innovation</h3>
+      <p>Think big, learn new skills and turn ideas into reality.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact" style="padding: 45px;">
+    <h2 class="section-title">Let's Connect! 💌</h2>
+    <p>Have an idea or question? We would love to hear from you.</p>
+    <a class="btn" href="mailto:hello@example.com">Contact Us</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 The World | Created with ❤️ as a student project</p>
+  <p>Designed for learning and creativity.</p>
+</footer>
+
+</body>
+</html>
